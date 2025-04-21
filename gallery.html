@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - Kazi Rokanuzzaman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            background: #121212;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #e91e63;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .back {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .back a {
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Gallery</h1>
+        <div class="gallery">
+<img src="gallery/gallery1.jpg" alt="Gallery Image">
+<img src="gallery/gallery2.jpg" alt="Gallery Image">
+<img src="gallery/gallery3.jpg" alt="Gallery Image">
+<img src="gallery/gallery4.jpg" alt="Gallery Image">
+<img src="gallery/gallery5.jpg" alt="Gallery Image">
+<img src="gallery/gallery6.jpg" alt="Gallery Image">
+<img src="gallery/gallery7.jpg" alt="Gallery Image">
+<img src="gallery/gallery8.jpg" alt="Gallery Image">
+<img src="gallery/gallery9.jpg" alt="Gallery Image">
+
+        </div>
+        <div class="back">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
